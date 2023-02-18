@@ -1,0 +1,28 @@
+.app__inspiration {
+  display: flex;
+  flex-direction: column;
+  margin-top: 105px;
+}
+
+.app__inspiration-cards {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1225px) {
+  .app__inspiration-cards {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .app__inspiration-cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

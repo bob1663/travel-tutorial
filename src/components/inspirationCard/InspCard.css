@@ -1,0 +1,78 @@
+.app__inspCard {
+  display: flex;
+  flex-direction: column;
+  background: #596363;
+  border-radius: 4px;
+  max-width: 334px;
+  justify-content: flex-start;
+}
+
+.app__inspCard-image {
+  display: flex;
+  max-width: 334px;
+  max-height: 334px;
+  object-fit: cover;
+}
+
+.app__inspCard-image img {
+  height: 100%;
+  max-height: 334px;
+  max-width: 334px;
+}
+
+.app__inspCard-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.app__inspCard-content-subtitle {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #d7fff1;
+}
+
+.app__inspCard-content h3 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+.app__inspCard-content-description {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 470px) {
+  .app__inspCard {
+    max-width: 300px;
+  }
+  .app__inspCard-image img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .app__inspCard {
+    max-width: 220px;
+  }
+  .app__inspCard-image img {
+    max-height: 220px;
+    max-width: 220px;
+  }
+}

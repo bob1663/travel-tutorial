@@ -1,0 +1,81 @@
+.app__catchAll {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/CatchAllBg.png");
+  background-size: cover;
+}
+
+.app__catchAll-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16.25rem;
+  max-width: 521px;
+  margin-bottom: 300px;
+  margin-top: 300px;
+  margin-right: 2rem;
+}
+
+.app__catchAll-content h1 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+.app__catchAll-content p {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 26px;
+}
+
+.app__catchAll-content button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-style: none;
+  outline: none;
+  max-width: 236px;
+  width: 100%;
+  margin-top: 26px;
+  background: #f5b963;
+  border-radius: 4px;
+  padding: 13px 40px;
+  cursor: pointer;
+
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.app__catchAll-content button:hover {
+  background: #da9c45;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 1425px) {
+  .app__catchAll-content {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .app__catchAll-content {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .app__catchAll-content h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}

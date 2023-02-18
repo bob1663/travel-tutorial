@@ -1,0 +1,179 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+
+  padding: 1.5rem 16.25rem;
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.app__navbar-logo h1:nth-child(1) {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #166527;
+}
+
+.app__navbar-logo h1:nth-child(2) {
+  font-family: var(--font-poppins);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1a3724;
+}
+
+.app__navbar-logo h1:nth-child(1):hover {
+  color: #1a3724;
+}
+
+.app__navbar-logo h1:nth-child(2):hover {
+  color: #166527;
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.app__navbar-links li {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+
+  cursor: pointer;
+  margin: 0 2rem;
+}
+
+.app__navbar-links li:last-child {
+  margin: 0 0.5rem;
+}
+
+.app__navbar-links li:hover {
+  color: #565656;
+  transition: 0.5s ease;
+}
+
+.app__navbar-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #3f3f3f;
+  cursor: pointer;
+}
+
+.profile-circle img {
+  width: 24px;
+  height: 24px;
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #2b3030;
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 42px;
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+
+.app__navbar-smallscreen_links {
+  list-style: none;
+}
+
+.app__navbar-smallscreen_links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-poppins);
+}
+
+.app__navbar-smallscreen_links li:hover {
+  color: #565656;
+}
+
+@media screen and (max-width: 1425px) {
+  .app__navbar {
+    padding: 1.5rem 6rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .app__navbar-links {
+    display: none;
+  }
+  .app__navbar-smallscreen {
+    display: flex;
+  }
+  .app__navbar-login {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .app__navbar {
+    padding: 1.5rem 2rem;
+  }
+
+  .app__navbar-logo {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .app__navbar-smallscreen_links li {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .app__navbar-logo h1:nth-child(1) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .app__navbar-logo h1:nth-child(2) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
